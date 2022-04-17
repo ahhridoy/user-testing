@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 
 const Reviews = () => {
@@ -15,10 +15,50 @@ const Reviews = () => {
       <h1 className="heading">Customer success through understanding</h1>
       <Slider {...settings}>
         <div>
-          <h3>1</h3>
+          <Row>
+            <Col md={6} xs={12}>
+              <p>
+                "To help our customers launch the most compelling digital
+                experiences, we partner with UserTesting to bring human insight
+                into our design process, empowering us with a higher degree of
+                confidence."
+              </p>
+              <div className="review-sub-box">
+                <img src="/assets/bio-img1.jpg" alt="logo" />
+                <p>
+                  <span>Jaime Vasquez</span> | Principal Experience Architect &
+                  Digital Strategist, Adobe Consulting
+                </p>
+              </div>
+            </Col>
+            <Col md={6} xs={12}>
+              <img className="col-img" src="/assets/adobe.png" alt="logo" />
+            </Col>
+          </Row>
         </div>
         <div>
-          <h3>2</h3>
+          <Row>
+            <Col md={6} xs={12}>
+              <p>
+                "Our CEO, Satya Nadella, tells us often that the source of
+                innovation comes from having a deep sense of empathy. And it's
+                true, empathy makes us better innovators. Today, Microsoft is
+                stronger than ever. UserTesting helps our entire company get
+                feedback from our customers at every single point in the
+                journey."
+              </p>
+              <div className="review-sub-box">
+                <img src="/assets/bio-img2.jpg" alt="logo" />
+                <p>
+                  <span>Tom Lorusso</span> | Xbox Principal User Research
+                  Manager, Microsoft
+                </p>
+              </div>
+            </Col>
+            <Col md={6} xs={12}>
+              <img className="col-img" src="/assets/microsoft.png" alt="logo" />
+            </Col>
+          </Row>
         </div>
       </Slider>
     </Container>
