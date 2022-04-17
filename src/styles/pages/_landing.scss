@@ -1,0 +1,85 @@
+@import "../imports/imports";
+
+#banner {
+  margin-top: 20px;
+  .banner-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .heading {
+      font-size: 3.75rem;
+      line-height: 4.375rem;
+      font-weight: 500;
+      text-align: start;
+      font-family: $primaryFont;
+    }
+    .sub-text {
+      font-size: 1.5rem;
+      text-align: start;
+      font-family: $secondaryFont;
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      button {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+#brands {
+  margin-top: 80px;
+  .heading {
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+    font-weight: 500;
+    font-family: $primaryFont;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .all-brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .button {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+#rating {
+  margin-top: 80px;
+  .rating-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 2.5rem;
+    height: 100%;
+    .box {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    h1 {
+      text-align: start;
+      font-size: 2.25rem;
+      line-height: 2.875rem;
+      font-weight: 500;
+      font-family: $primaryFont;
+      margin-bottom: 20px;
+    }
+    a {
+      text-align: start;
+    }
+    .rated-img {
+      height: auto;
+      width: 30%;
+    }
+  }
+}

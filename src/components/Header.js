@@ -1,12 +1,10 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import "../styles/imports/_imports.scss";
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       {/* <Container> */}
-        <div className="container-fluid">
+      <div className="container-fluid">
         <a className="navbar-brand" href="#">
           User Testing
         </a>
@@ -264,9 +262,11 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <button type="button" className="btn btn-outline-primary">Request trail</button>
+          <button type="button" className="btn btn-outline-primary">
+            Request trail
+          </button>
         </div>
-        </div>
+      </div>
       {/* </Container> */}
     </nav>
   );
