@@ -326,15 +326,39 @@ const LandingPage = () => {
       </section>
 
       <section id="solution">
-         <Container>
-            <Row>
-               <Col md={3}>
-                  <div>
-                     
-                  </div>
-               </Col>
-            </Row>
-         </Container>
+        <Container>
+          <h1 className="heading">Solutions for every team</h1>
+          <Row>
+            <Col md={3}>
+              <div className="box1">
+                <h2>UX and Design</h2>
+                <p>Understand needs and design solution</p>
+                <a href="#">Learn More</a>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="box2">
+                <h2>Executives</h2>
+                <p>Give every team access to real human insight</p>
+                <a href="#">Learn More</a>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="box3">
+                <h2>Product</h2>
+                <p>Feedback at each stage of the product development process</p>
+                <a href="#">Learn More</a>
+              </div>
+            </Col>
+            <Col md={3}>
+              <div className="box4">
+                <h2>Marketing</h2>
+                <p>Drive growth and ensure your messaging resonates</p>
+                <a href="#">Learn More</a>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </>
   );

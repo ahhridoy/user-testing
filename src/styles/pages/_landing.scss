@@ -61,6 +61,7 @@
     border-radius: 10px;
     padding: 2.5rem;
     height: 100%;
+    margin-right: 20px;
     .box {
       display: flex;
       justify-content: space-around;
@@ -80,6 +81,102 @@
     .rated-img {
       height: auto;
       width: 30%;
+    }
+  }
+}
+
+#solution {
+  margin-top: 100px;
+  .heading {
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+    font-weight: 500;
+    font-family: $primaryFont;
+    margin-bottom: 20px;
+  }
+  .box1 {
+    background-image: url("../../../public/assets/designer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 450px;
+    h2 {
+      font-family: $primaryFont;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    a {
+      color: black;
+    }
+  }
+  .box2 {
+    background-image: url("../../../public/assets/executives.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 450px;
+    h2 {
+      font-family: $primaryFont;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    a {
+      color: black;
+    }
+  }
+  .box3 {
+    background-image: url("../../../public/assets/product.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 450px;
+    h2 {
+      font-family: $primaryFont;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    a {
+      color: black;
+    }
+  }
+  .box4 {
+    background-image: url("../../../public/assets/marketing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 450px;
+    h2 {
+      font-family: $primaryFont;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      line-height: 2rem;
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    a {
+      color: black;
     }
   }
 }
