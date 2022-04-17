@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .container-fluid {
+     padding: 0px 40px;
+  }
+  .navbar-brand {
+     font-weight: bold;
+  }
+  .btn {
+     border-radius: 80px;
+     padding: 20px;
+     font-weight: 700;
+  }
+  .solutions-tab {
+    display: flex;
+    width: 500px;
+    gap: 80px;
+    padding: 20px;
+  }
+  .features-tab {
+    padding: 20px;
+    width: 200px;
+  }
+  .company-tab {
+    display: flex;
+    width: 800px;
+    gap: 80px;
+    padding: 20px;
+  }
+  .resource-tab {
+    display: flex;
+    width: 500px;
+    gap: 80px;
+    padding: 20px;
+  }
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  padding: 20px 0px;
+}
+.nav-link {
+  font-weight: 700;
+  color: black !important;
+}
