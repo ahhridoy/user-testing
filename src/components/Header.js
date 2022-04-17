@@ -264,7 +264,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <button type="button" class="btn btn-outline-primary">Request trail</button>
+          <button type="button" className="btn btn-outline-primary">Request trail</button>
         </div>
         </div>
       {/* </Container> */}

@@ -1,0 +1,28 @@
+#banner {
+  margin-top: 20px;
+  .banner-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .heading {
+      font-size: 3.75rem;
+      line-height: 4.375rem;
+      font-weight: 500;
+      text-align: start;
+      font-family: $primaryFont;
+    }
+    .sub-text {
+      font-size: 1.5rem;
+      text-align: start;
+      font-family: $secondaryFont;
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      button {
+        margin-right: 10px;
+      }
+    }
+  }
+}
