@@ -366,29 +366,33 @@ const LandingPage = () => {
       <section id="works">
         <Container>
           <h1 className="heading">How it works</h1>
-          <div className="items">
-            <div className="map-items">
-              {works.map((work) => (
-                <div
-                  key={work.id}
-                  className={`${work.name === activeIndex ? "active" : ""}`}
-                  onClick={() => setActiveIndex(work.name)}
-                >
-                  {work.name}
-                </div>
-              ))}
-            </div>
-            {works
-              .filter((work) => work.name === activeIndex)
-              .map((work) => (
-                <div className="map-item" key={work.id}>
-                  <img src={work.img} alt="logo" />
-                  <div>
-                  <h1>{work.title}</h1>
-                  <p dangerouslySetInnerHTML={{ __html: work.description }}></p>
+          <div className="roadmap-area">
+            <div className="items">
+              <div className="map-items">
+                {works.map((item, index) => (
+                  <div
+                    key={index}
+                    className={`${item.id === activeIndex ? "active" : ""}`}
+                    onClick={() => setActiveIndex(item.id)}
+                  >
+                    {item.name}
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+              {works
+                .filter((item) => item.id === activeIndex)
+                .map((item, index) => (
+                  <div className="map-item" key={index}>
+                    <img src={item.img} alt="logo" />
+                    <div>
+                      <h1>{item.title}</h1>
+                      <p
+                        dangerouslySetInnerHTML={{ __html: item.description }}
+                      ></p>
+                    </div>
+                  </div>
+                ))}
+            </div>
           </div>
         </Container>
       </section>
