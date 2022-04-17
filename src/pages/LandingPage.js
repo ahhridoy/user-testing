@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import Header from "../components/Header";
 import "../styles/pages/_landing.scss";
+import { works } from "../data/data";
 
 const LandingPage = () => {
+  const [activeIndex, setActiveIndex] = useState(1);
   return (
     <>
       <section id="header">
@@ -358,6 +360,36 @@ const LandingPage = () => {
               </div>
             </Col>
           </Row>
+        </Container>
+      </section>
+
+      <section id="works">
+        <Container>
+          <h1 className="heading">How it works</h1>
+          <div className="items">
+            <div className="map-items">
+              {works.map((work) => (
+                <div
+                  key={work.id}
+                  className={`${work.name === activeIndex ? "active" : ""}`}
+                  onClick={() => setActiveIndex(work.name)}
+                >
+                  {work.name}
+                </div>
+              ))}
+            </div>
+            {works
+              .filter((work) => work.name === activeIndex)
+              .map((work) => (
+                <div className="map-item" key={work.id}>
+                  <img src={work.img} alt="logo" />
+                  <div>
+                  <h1>{work.title}</h1>
+                  <p dangerouslySetInnerHTML={{ __html: work.description }}></p>
+                  </div>
+                </div>
+              ))}
+          </div>
         </Container>
       </section>
     </>
