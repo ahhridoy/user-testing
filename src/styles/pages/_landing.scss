@@ -26,6 +26,9 @@
         margin-right: 10px;
       }
     }
+    img {
+      max-width: 100%;
+    }
   }
 }
 
@@ -245,6 +248,10 @@
         }
       }
     }
+  }
+  .button {
+    margin-top: 60px;
+    text-align: center;
   }
   @media screen and (max-width: 786px) {
     padding-top: 100px;

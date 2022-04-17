@@ -3,6 +3,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import Header from "../components/Header";
 import "../styles/pages/_landing.scss";
 import { works } from "../data/data";
+import Reviews from "../components/Reviews";
 
 const LandingPage = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -394,7 +395,14 @@ const LandingPage = () => {
                 ))}
             </div>
           </div>
+          <div className="button">
+            <Button variant="outline-primary">Explore Platform</Button>
+          </div>
         </Container>
+      </section>
+
+      <section id="reviews">
+        <Reviews />
       </section>
     </>
   );
