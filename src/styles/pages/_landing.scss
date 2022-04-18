@@ -131,13 +131,15 @@
       margin-bottom: 0.25rem;
       line-height: 2rem;
       font-size: 1.5rem;
+      color: $secondaryColor;
     }
     p {
       font-weight: 400;
       margin-bottom: 2rem;
+      color: $secondaryColor
     }
     a {
-      color: black;
+      color: $secondaryColor;
     }
   }
   .box3 {
@@ -173,13 +175,15 @@
       margin-bottom: 0.25rem;
       line-height: 2rem;
       font-size: 1.5rem;
+      color: $secondaryColor;
     }
     p {
       font-weight: 400;
       margin-bottom: 2rem;
+      color: $secondaryColor;
     }
     a {
-      color: black;
+      color: $secondaryColor;
     }
   }
 }

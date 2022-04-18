@@ -31,7 +31,82 @@ const LandingPage = () => {
               </div>
             </Col>
             <Col md={6} xs={12}>
-              <img src="/assets/banner.png" alt="logo" />
+              <div className="banner-img">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="140"
+                  height="140"
+                  viewBox="0 0 140 140"
+                  fill="none"
+                >
+                  <g filter="url(#filter0_dd_1172_18897)">
+                    <path
+                      d="M92.5667 65.6805L57.755 48.2738C57.3592 48.0771 56.9198 47.9846 56.4783 48.005C56.0368 48.0254 55.6078 48.1581 55.2319 48.3905C54.856 48.6229 54.5456 48.9474 54.33 49.3333C54.1144 49.7191 54.0009 50.1535 54 50.5955V85.4072C54.0007 85.8492 54.1142 86.2837 54.3297 86.6696C54.5453 87.0555 54.8558 87.3799 55.2318 87.6122C55.6078 87.8446 56.0369 87.9771 56.4785 87.9972C56.92 88.0173 57.3594 87.9244 57.755 87.7272L92.5667 70.3222C92.9976 70.1066 93.36 69.7753 93.6133 69.3654C93.8666 68.9555 94.0007 68.4832 94.0007 68.0013C94.0007 67.5195 93.8666 67.0472 93.6133 66.6373C93.36 66.2274 92.9976 65.8961 92.5667 65.6805Z"
+                      fill="#0C163D"
+                    />
+                    <circle
+                      cx="70"
+                      cy="68"
+                      r="59"
+                      stroke="#0C163D"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_dd_1172_18897"
+                      x="0"
+                      y="0"
+                      width="140"
+                      height="140"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="2" />
+                      <feGaussianBlur stdDeviation="5" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.106 0 0 0 0 0.193733 0 0 0 0 0.294 0 0 0 0.05 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_1172_18897"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="effect1_dropShadow_1172_18897"
+                        result="effect2_dropShadow_1172_18897"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect2_dropShadow_1172_18897"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -377,7 +452,7 @@ const LandingPage = () => {
                     className={`${item.id === activeIndex ? "active" : ""}`}
                     onClick={() => setActiveIndex(item.id)}
                   >
-                    {item.name}
+                    <u>{item.name}</u>
                   </div>
                 ))}
               </div>
