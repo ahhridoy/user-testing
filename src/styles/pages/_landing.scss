@@ -22,12 +22,22 @@
       display: flex;
       align-items: center;
       justify-content: start;
+      margin-bottom: 50px;
       button {
         margin-right: 10px;
       }
     }
-    img {
-      max-width: 100%;
+    .banner-img {
+      background-image: url("../../../public/assets/banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+      .video-svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 150px;
+      }
     }
   }
 }
@@ -136,7 +146,7 @@
     p {
       font-weight: 400;
       margin-bottom: 2rem;
-      color: $secondaryColor
+      color: $secondaryColor;
     }
     a {
       color: $secondaryColor;
