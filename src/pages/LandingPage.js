@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import "../styles/pages/_landing.scss";
 import { works } from "../data/data";
 import Reviews from "../components/Reviews";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -424,6 +425,9 @@ const LandingPage = () => {
             <Button variant="outline-primary">Explore Platform</Button>
           </div>
         </Container>
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </>
   );
