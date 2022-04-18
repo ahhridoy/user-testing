@@ -404,6 +404,27 @@ const LandingPage = () => {
       <section id="reviews">
         <Reviews />
       </section>
+      <section id="vector-img">
+        <Container>
+          <div className="vector">
+            <img src="/assets/vector.png" alt="logo" />
+          </div>
+        </Container>
+      </section>
+      <section id="real-human">
+        <Container>
+          <h1 className="heading">
+            Real human insight, <br /> delivered real fast
+          </h1>
+          <p className="sub-text">
+            Improve your products, services, and brands by <br /> watching
+            video-based experience testing.
+          </p>
+          <div className="button">
+            <Button variant="outline-primary">Explore Platform</Button>
+          </div>
+        </Container>
+      </section>
     </>
   );
 };

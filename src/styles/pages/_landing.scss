@@ -254,3 +254,39 @@
     padding-top: 100px;
   }
 }
+
+#vector-img {
+  .vector {
+    text-align: end;
+    img {
+      width: 300px;
+    }
+  }
+}
+
+#real-human {
+  // margin-top: 100px;
+  background-image: url("../../../public//assets/real-human.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 800px;
+  .heading {
+    text-align: start;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    font-family: $primaryFont;
+    margin-bottom: 40px;
+    padding-top: 200px;
+  }
+  .sub-text {
+    line-height: 1.875rem;
+    font-size: 1.5rem;
+  }
+  .button {
+    margin-top: 60px;
+    text-align: start;
+  }
+}
